@@ -21,6 +21,7 @@ class Ask006 {
         while (tmp != null) {
             list.add(0, tmp.any!!)
             tmp = tmp.next
+
         }
         return list
     }
