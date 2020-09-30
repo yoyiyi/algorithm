@@ -16,12 +16,25 @@ class ExampleUnitTest {
 
     @Test
     fun testAsk003() {
-        var ask = Ask003()
-        var nums = intArrayOf(2, 3, 1, 0, 2, 5)
-        var duplication = intArrayOf(-1)
+        val ask = Ask003()
+        val nums = intArrayOf(2, 3, 1, 0, 2, 5)
+        val duplication = intArrayOf(-1)
         val duplicate = ask.duplicate(nums, duplication)
         if (duplicate) {
             println(duplication[0])
         }
+    }
+
+    @Test
+    fun testAsk004() {
+        val arr = Array(5) { Array(5) { i -> i } }
+        arr[0] = intArrayOf(1, 4, 7, 11, 15).toTypedArray()
+        arr[1] = intArrayOf(2, 5, 8, 12, 19).toTypedArray()
+        arr[2] = intArrayOf(3, 6, 9, 16, 22).toTypedArray()
+        arr[3] = intArrayOf(10, 13, 14, 17, 24).toTypedArray()
+        arr[4] = intArrayOf(18, 21, 23, 26, 30).toTypedArray()
+        val ask = Ask004()
+        val find = ask.find(16, arr)
+        println(find)
     }
 }

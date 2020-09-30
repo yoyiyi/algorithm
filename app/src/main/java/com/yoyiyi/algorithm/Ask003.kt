@@ -1,12 +1,6 @@
 package com.yoyiyi.algorithm
 
-/**
- * 类名：ask003
- * 描述：TODO
- * 时间：2020/9/30 10:56
- * @author <a href="2455676683@qq.com">zzq</a>
- * @version 1.0
- */
+
 /**
  * 数组中重复的数字
  *
