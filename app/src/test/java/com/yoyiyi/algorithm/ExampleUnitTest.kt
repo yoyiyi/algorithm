@@ -37,4 +37,24 @@ class ExampleUnitTest {
         val find = ask.find(16, arr)
         println(find)
     }
+
+    @Test
+    fun  testAsk005(){
+        val ask  = Ask006()
+        val ln1 = ListNode()
+        val ln2 = ListNode()
+        val ln3 = ListNode()
+        ln1.any = 1
+        ln1.next = ln2
+
+        ln2.any = 2
+        ln2.next = ln3
+
+        ln3.any = 3
+        val list = ask.printListFromTailToHead1(ln1)
+        println(list)
+        val list2 = ask.printListFromTailToHead2(ln1)
+        println(list2)
+
+    }
 }
