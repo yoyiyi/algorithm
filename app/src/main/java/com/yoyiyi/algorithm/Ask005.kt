@@ -21,7 +21,11 @@ class Ask005{
     }
 
     fun replaceSpace2(str: StringBuffer): String {
-
-        return ""
+        val  sb  =  StringBuilder()
+        str.forEach {
+            if (it == ' ') sb.append("%20")
+            else sb.append(it)
+        }
+        return sb.toString()
     }
 }
