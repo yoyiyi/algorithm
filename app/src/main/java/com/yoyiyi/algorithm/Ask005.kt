@@ -22,11 +22,6 @@ class Ask005{
 
     fun replaceSpace2(str: StringBuffer): String {
 
-
-
-
-
-
         return ""
     }
 }
